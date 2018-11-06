@@ -29,6 +29,8 @@
 		773926472183013F00DBF401 /* UnitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773926462183013F00DBF401 /* UnitHelper.swift */; };
 		7739264B218301D000DBF401 /* HYRightItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77392649218301D000DBF401 /* HYRightItemView.swift */; };
 		7739264C218301D000DBF401 /* HYRightItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7739264A218301D000DBF401 /* HYRightItemView.xib */; };
+		7739F4D82191458F0018B003 /* LSSelectTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7739F4D62191458F0018B003 /* LSSelectTimeView.swift */; };
+		7739F4D92191458F0018B003 /* LSSelectTimeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7739F4D72191458F0018B003 /* LSSelectTimeView.xib */; };
 		BBBEC49B5141F0C0F36AD317 /* Pods_LSCustomUISet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0DD5D2F335ACDE8E501100 /* Pods_LSCustomUISet.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		773926462183013F00DBF401 /* UnitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitHelper.swift; sourceTree = "<group>"; };
 		77392649218301D000DBF401 /* HYRightItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYRightItemView.swift; sourceTree = "<group>"; };
 		7739264A218301D000DBF401 /* HYRightItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYRightItemView.xib; sourceTree = "<group>"; };
+		7739F4D62191458F0018B003 /* LSSelectTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSSelectTimeView.swift; sourceTree = "<group>"; };
+		7739F4D72191458F0018B003 /* LSSelectTimeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSSelectTimeView.xib; sourceTree = "<group>"; };
 		BDF2DDE4E2DDA5E1FA97E078 /* Pods-LSCustomUISet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSCustomUISet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSCustomUISet/Pods-LSCustomUISet.debug.xcconfig"; sourceTree = "<group>"; };
 		C312A325791403BFF5B4803A /* Pods-LSCustomUISet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSCustomUISet.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSCustomUISet/Pods-LSCustomUISet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +155,8 @@
 		77392648218301BF00DBF401 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7739F4D62191458F0018B003 /* LSSelectTimeView.swift */,
+				7739F4D72191458F0018B003 /* LSSelectTimeView.xib */,
 				77392649218301D000DBF401 /* HYRightItemView.swift */,
 				7739264A218301D000DBF401 /* HYRightItemView.xib */,
 			);
@@ -219,6 +225,7 @@
 				773925F92182FDF300DBF401 /* LaunchScreen.storyboard in Resources */,
 				7739264C218301D000DBF401 /* HYRightItemView.xib in Resources */,
 				773925F62182FDF300DBF401 /* Assets.xcassets in Resources */,
+				7739F4D92191458F0018B003 /* LSSelectTimeView.xib in Resources */,
 				773925F42182FDF200DBF401 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 				773926242182FE2B00DBF401 /* DictionaryExtension.swift in Sources */,
 				773926202182FE2B00DBF401 /* String.swift in Sources */,
 				7739261B2182FE2B00DBF401 /* SSProgressView.swift in Sources */,
+				7739F4D82191458F0018B003 /* LSSelectTimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
