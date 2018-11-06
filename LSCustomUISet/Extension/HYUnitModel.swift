@@ -16,6 +16,38 @@ class HYUnitModel: NSObject {
 }
 
 extension HYUnitModel {
+    ///系统语音播报
+    public  func beginConversation(str:String) {
+        self.speechStrings.removeAll()
+        self.speechStrings.append(str)
+        for  i in 0...self.speechStrings.count-1 {
+            let utterance = AVSpeechUtterance.init(string: self.speechStrings[i])
+            utterance.voice = self.voices
+            utterance.rate = 0.5
+            utterance.pitchMultiplier = 1
+            utterance.postUtteranceDelay = 1.0
+            self.synthesizer.speak(utterance)
+        }
+    }
+    
+    /// 拨打电话
+    ///
+    /// - Parameter tell:
+    public func callPhone(tell:String) {
+        let urlString = "tel://" + tell
+        if let url = URL(string: urlString) {
+            //根据iOS系统版本，分别处理
+            if #available(iOS 10, *) {
+                UIApplication.shared.open(url, options: [:],
+                                          completionHandler: {
+                                            (success) in
+                })
+            } else {
+                UIApplication.shared.openURL(url)
+            }
+        }
+    }
+    
     
     func showAlart(vc:UIViewController,title:String,meagess:String,sureTitle:String,cancleTitle:String,block:@escaping BackData)  {
         
@@ -37,36 +69,6 @@ extension HYUnitModel {
 
 extension HYUnitModel:UIImagePickerControllerDelegate,UINavigationControllerDelegate {
     
-    public  func beginConversation(str:String) {
-        self.speechStrings.removeAll()
-        self.speechStrings.append(str)
-        for  i in 0...self.speechStrings.count-1 {
-            let utterance = AVSpeechUtterance.init(string: self.speechStrings[i])
-            utterance.voice = self.voices
-            utterance.rate = 0.5
-            utterance.pitchMultiplier = 1
-            utterance.postUtteranceDelay = 1.0
-            self.synthesizer.speak(utterance)
-        }
-    }
-    
-    /// 拨打电话
-    ///
-    /// - Parameter tell:  
-    public func callPhone(tell:String) {
-        let urlString = "tel://" + tell
-        if let url = URL(string: urlString) {
-            //根据iOS系统版本，分别处理
-            if #available(iOS 10, *) {
-                UIApplication.shared.open(url, options: [:],
-                                          completionHandler: {
-                                            (success) in
-                })
-            } else {
-                UIApplication.shared.openURL(url)
-            }
-        }
-    }
     
     static func alertShow(vc:UIViewController, title:String,message:String,preferredStyle:UIAlertController.Style ,confirm: ((UIAlertAction)->Void)?){
         let alertController :UIAlertController?
