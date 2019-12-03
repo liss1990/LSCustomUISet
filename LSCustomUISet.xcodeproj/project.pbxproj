@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,7 @@
 		BBBEC49B5141F0C0F36AD317 /* Pods_LSCustomUISet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0DD5D2F335ACDE8E501100 /* Pods_LSCustomUISet.framework */; };
 		F3D1E0F4239606F30063943D /* LSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E0F3239606F30063943D /* LSButton.m */; };
 		F3D1E0F8239607010063943D /* MASConstraint+LSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E0F7239607010063943D /* MASConstraint+LSHelper.m */; };
+		F3D1E0FF23960D0B0063943D /* OCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E0FE23960D0B0063943D /* OCDemoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,9 @@
 		F3D1E0F5239607010063943D /* LSMASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMASUtilities.h; sourceTree = "<group>"; };
 		F3D1E0F6239607010063943D /* MASConstraint+LSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+LSHelper.h"; sourceTree = "<group>"; };
 		F3D1E0F7239607010063943D /* MASConstraint+LSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASConstraint+LSHelper.m"; sourceTree = "<group>"; };
+		F3D1E0FC239609140063943D /* CustomBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBridging.h; sourceTree = "<group>"; };
+		F3D1E0FD23960D0B0063943D /* OCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCDemoViewController.h; sourceTree = "<group>"; };
+		F3D1E0FE23960D0B0063943D /* OCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDemoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				773926002182FE2B00DBF401 /* Extension */,
 				773925EE2182FDF100DBF401 /* AppDelegate.swift */,
 				773925F02182FDF200DBF401 /* ViewController.swift */,
+				F3D1E0FD23960D0B0063943D /* OCDemoViewController.h */,
+				F3D1E0FE23960D0B0063943D /* OCDemoViewController.m */,
 				773925F22182FDF200DBF401 /* Main.storyboard */,
 				773925F52182FDF300DBF401 /* Assets.xcassets */,
 				773925F72182FDF300DBF401 /* LaunchScreen.storyboard */,
@@ -148,10 +154,13 @@
 		77392648218301BF00DBF401 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F3D1E0F2239606F30063943D /* LSButton.h */,
+				F3D1E0F3239606F30063943D /* LSButton.m */,
 				7739F4D62191458F0018B003 /* LSSelectTimeView.swift */,
 				7739F4D72191458F0018B003 /* LSSelectTimeView.xib */,
 				77392649218301D000DBF401 /* HYRightItemView.swift */,
 				7739264A218301D000DBF401 /* HYRightItemView.xib */,
+				F3D1E0FC239609140063943D /* CustomBridging.h */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -162,8 +171,6 @@
 				F3D1E0F5239607010063943D /* LSMASUtilities.h */,
 				F3D1E0F6239607010063943D /* MASConstraint+LSHelper.h */,
 				F3D1E0F7239607010063943D /* MASConstraint+LSHelper.m */,
-				F3D1E0F2239606F30063943D /* LSButton.h */,
-				F3D1E0F3239606F30063943D /* LSButton.m */,
 				7739260A2182FE2B00DBF401 /* UIButton+extend.h */,
 				773926042182FE2B00DBF401 /* UIButton+extend.m */,
 			);
@@ -317,6 +324,7 @@
 				7739261E2182FE2B00DBF401 /* UIImage+Color.swift in Sources */,
 				773926212182FE2B00DBF401 /* UIImage.swift in Sources */,
 				7739264B218301D000DBF401 /* HYRightItemView.swift in Sources */,
+				F3D1E0FF23960D0B0063943D /* OCDemoViewController.m in Sources */,
 				773925F12182FDF200DBF401 /* ViewController.swift in Sources */,
 				773926142182FE2B00DBF401 /* Date.swift in Sources */,
 				773925EF2182FDF100DBF401 /* AppDelegate.swift in Sources */,
@@ -480,6 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ls.LSCustomUISet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LSCustomUISet/UI/CustomBridging.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -499,6 +508,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ls.LSCustomUISet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = LSCustomUISet/UI/CustomBridging.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LSButton : UIButton
  
 ///  设置 按钮文字
--(LSButton*(^)(NSString*))title;
+-(LSButton*(^)(NSString*))lstitle;
 ///  设置 字体
 -(LSButton*(^)(UIFont*))titleFont;
 ///  设置 字体颜色

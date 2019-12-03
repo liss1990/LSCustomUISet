@@ -35,7 +35,7 @@
     return self;
 }
  
--(LSButton*(^)(NSString*))title{
+-(LSButton*(^)(NSString*))lstitle{
      
    LSButton *(^result)(NSString*) = ^(NSString *value){
        [self setTitle:value forState:0];

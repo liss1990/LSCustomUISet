@@ -5,13 +5,10 @@
 //  Created by Ebuy EDITSUITE MAC on 2019/12/2.
 //  Copyright © 2019 com.ebuyhouse.www. All rights reserved.
 //
-
+#import <Masonry/Masonry.h>
 #import "MASConstraint+LSHelper.h"
-//宽高
-//#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-//#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define SCREEN_SCALE SCREEN_WIDTH / 375.0
-
+#import "LSMASUtilities.h"
+ 
 #define LSMASMethodNotImplemented() \
 @throw [NSException exceptionWithName:NSInternalInconsistencyException \
                                reason:[NSString stringWithFormat:@"You must override %@ in a subclass.", NSStringFromSelector(_cmd)] \

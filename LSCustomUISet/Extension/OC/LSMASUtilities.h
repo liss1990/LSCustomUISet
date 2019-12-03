@@ -5,6 +5,7 @@
 //  Created by Ebuy EDITSUITE MAC on 2019/12/2.
 //  Copyright © 2019 Lisisi. All rights reserved.
 //
+#import <Masonry/Masonry.h>
 #import <Foundation/Foundation.h>
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
