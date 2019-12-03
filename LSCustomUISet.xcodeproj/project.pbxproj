@@ -35,6 +35,7 @@
 		F3D1E0F4239606F30063943D /* LSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E0F3239606F30063943D /* LSButton.m */; };
 		F3D1E0F8239607010063943D /* MASConstraint+LSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E0F7239607010063943D /* MASConstraint+LSHelper.m */; };
 		F3D1E0FF23960D0B0063943D /* OCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E0FE23960D0B0063943D /* OCDemoViewController.m */; };
+		F3D1E10223960FD10063943D /* UIFont+LSCustomize.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1E10023960FD10063943D /* UIFont+LSCustomize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,9 @@
 		F3D1E0FC239609140063943D /* CustomBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBridging.h; sourceTree = "<group>"; };
 		F3D1E0FD23960D0B0063943D /* OCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCDemoViewController.h; sourceTree = "<group>"; };
 		F3D1E0FE23960D0B0063943D /* OCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDemoViewController.m; sourceTree = "<group>"; };
+		F3D1E10023960FD10063943D /* UIFont+LSCustomize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+LSCustomize.m"; sourceTree = "<group>"; };
+		F3D1E10123960FD10063943D /* UIFont+LSCustomize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+LSCustomize.h"; sourceTree = "<group>"; };
+		F3D1E103239630180063943D /* LSMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,11 +172,14 @@
 		F3D1E0F02396065D0063943D /* OC */ = {
 			isa = PBXGroup;
 			children = (
+				F3D1E10123960FD10063943D /* UIFont+LSCustomize.h */,
+				F3D1E10023960FD10063943D /* UIFont+LSCustomize.m */,
 				F3D1E0F5239607010063943D /* LSMASUtilities.h */,
 				F3D1E0F6239607010063943D /* MASConstraint+LSHelper.h */,
 				F3D1E0F7239607010063943D /* MASConstraint+LSHelper.m */,
 				7739260A2182FE2B00DBF401 /* UIButton+extend.h */,
 				773926042182FE2B00DBF401 /* UIButton+extend.m */,
+				F3D1E103239630180063943D /* LSMacro.h */,
 			);
 			path = OC;
 			sourceTree = "<group>";
@@ -326,6 +333,7 @@
 				7739264B218301D000DBF401 /* HYRightItemView.swift in Sources */,
 				F3D1E0FF23960D0B0063943D /* OCDemoViewController.m in Sources */,
 				773925F12182FDF200DBF401 /* ViewController.swift in Sources */,
+				F3D1E10223960FD10063943D /* UIFont+LSCustomize.m in Sources */,
 				773926142182FE2B00DBF401 /* Date.swift in Sources */,
 				773925EF2182FDF100DBF401 /* AppDelegate.swift in Sources */,
 				773926242182FE2B00DBF401 /* DictionaryExtension.swift in Sources */,

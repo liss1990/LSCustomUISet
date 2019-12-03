@@ -7,9 +7,7 @@
 //
 #import <Masonry/Masonry.h>
 #import <Foundation/Foundation.h>
-#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
-#define SCREEN_SCALE [UIScreen mainScreen].bounds.size.width / 375.0
+#import "LSMacro.h"
 
 static inline id LS_MASBoxValue(const char *type, ...) {
     va_list v;
